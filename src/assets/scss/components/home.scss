@@ -1,0 +1,247 @@
+.headerBanner {
+  position: relative;
+  .headerBannerImages {
+    display: flex;
+    justify-content: flex-end;
+    .imageHeader.forPersonalUse {
+      margin-right: -308px;
+    }
+  }
+  .headerBannerContent {
+    position: absolute;
+    height: 300px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    h1 {
+      font-family: Bebas Neue;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 100px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: $black;
+      span {
+        color: $orange;
+      }
+    }
+    a.button {
+      color: white;
+      width: 300px;
+      height: 50px;
+      background-color: $orange;
+      display: inline-block;
+      line-height: 50px;
+      vertical-align: middle;
+      text-align: center;
+      border-radius: 100px;
+    }
+  }
+}
+.logowall {
+  p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 24px;
+    text-align: center;
+    margin: 65px;
+    span {
+      font-weight: 700;
+    }
+  }
+  .logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    img {
+      margin: 0 60px;
+      margin-bottom: 40px;
+      max-width: 202px;
+      max-height: 61px;
+    }
+  }
+}
+.poppularDjs {
+  position: relative;
+  padding-top: 140px;
+  overflow: hidden;
+  padding-bottom: 140px;
+  &:before {
+    z-index: 1;
+    content: "";
+    display: inline-block;
+    width: 200%;
+    height: calc(100% - 280px);
+    background: black;
+    position: absolute;
+    transform: rotate(-7deg);
+    margin-left: -50%;
+  }
+  .poppularDjsBlock {
+    padding: 160px 0;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    .djs {
+      display: flex;
+      .djContent {
+        width: 220px;
+        border-radius: 8px;
+        margin-top: 40px;
+        &:first-child {
+          margin-top: 0px;
+        }
+        .djBlock {
+          position: relative;
+          margin-right: 15px;
+          margin-bottom: 20px;
+          img {
+            border-radius: 8px;
+          }
+          .text {
+            position: absolute;
+            bottom: 0;
+            z-index: 3;
+            background: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            padding: 12px;
+            padding-top: 11px;
+            padding-bottom: 6px;
+            h6 {
+              color: white;
+              font-family: Montserrat;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 14px;
+              line-height: 17px;
+            }
+            p {
+              font-family: Montserrat;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 12px;
+              color: white;
+              line-height: 14px;
+            }
+          }
+          .playIcon {
+            position: absolute;
+            top: 0;
+            bottom: 40px;
+            left: 0;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
+  .aboutMusic {
+    margin-left: 163px;
+    h2 {
+      font-size: 80px;
+      weight: 700;
+      color: white;
+      line-height: 100%;
+      span {
+        color: $orange;
+      }
+    }
+    .subtitle {
+      color: white;
+      margin-bottom: 42px;
+    }
+    .musicList {
+      li {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        max-width: 430px;
+        margin-bottom: 16px;
+        padding: 6px;
+        img {
+          width: 52px;
+          height: 52px;
+        }
+        .text {
+          flex-grow: 1;
+          margin-left: 15px;
+          color: white;
+          h4 {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+          }
+          p {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+.RunLikeAnAthlete {
+  position: relative;
+  .RunLikeAnAthleteImage {
+    width: 100%;
+    margin-top: calc(-130px - 5vw);
+    img {
+      width: 100%;
+    }
+  }
+  .RunLikeAnAthleteContent {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 5;
+    display: inline-block;
+    width: 600px;
+    height: 200px;
+    text-align: center;
+  }
+  h2 {
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 100%;
+    color: white;
+    span {
+      color: $orange;
+    }
+  }
+  p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    color: white;
+  }
+  a.button {
+    color: white;
+    width: 300px;
+    height: 50px;
+    background-color: $orange;
+    display: inline-block;
+    line-height: 50px;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 100px;
+  }
+}
