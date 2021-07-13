@@ -1,0 +1,118 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  outline: none !important;
+}
+iframe,
+object,
+embed {
+  border: none;
+  width: 100%;
+}
+textarea,
+input {
+  -webkit-appearance: none;
+}
+img {
+  image-orientation: from-image;
+}
+html,
+body {
+  background-color: #fff;
+  max-width: 100%;
+  position: relative;
+}
+body {
+  color: #4a4a4a;
+  margin: 0;
+  font-family: "Replica-Regular";
+  &.page {
+    margin: 0;
+  }
+}
+a,
+a:hover,
+a:focus {
+  color: inherit;
+  transition: all 0.5s;
+  text-decoration: none;
+  outline: none;
+}
+button,
+button:hover,
+.btn,
+.btn:hover {
+  transition: all 0.25s;
+  outline: none;
+  font-family: "Replica-Regular";
+  line-height: 1;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.title-page {
+  font-size: 38px;
+  font-family: "Replica-Bold";
+  max-width: 480px;
+  line-height: 1.1;
+  margin-bottom: 63px;
+  max-width: 250px;
+  @media (min-width: 768px) {
+    font-size: 61px;
+    max-width: 500px;
+    margin-bottom: 25px;
+  }
+  @media (min-width: 1024px) {
+    font-size: 68px;
+  }
+}
+.subtitle-page {
+  font-family: "Replica-Regular";
+  font-size: 19px;
+  margin-bottom: 38px;
+  max-width: 450px;
+}
+.section-title {
+  font-size: 30px;
+  line-height: 1;
+  color: $tkaw-blue;
+  margin-bottom: 50px;
+  font-family: "Replica-Bold";
+  @media (min-width: 1024px) {
+    font-size: 38px;
+    line-height: 1.5;
+  }
+}
+.section-subtitle {
+  color: #4b4b4b;
+  font-family: "Replica-Regular";
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #4b4b4b;
+  font-size: 16px;
+  padding: 16px 50px;
+  max-width: max-content;
+}
+.active-menu {
+  .overlay {
+    content: "";
+    background: rgba(0, 0, 0, 0.1);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+  }
+}
