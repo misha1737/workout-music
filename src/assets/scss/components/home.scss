@@ -286,12 +286,12 @@
 }
 .fitRadio {
   position: relative;
-  padding-top: 140px;
+  padding-top: 0px;
   overflow: hidden;
-  padding-bottom: 140px;
+  padding-bottom: 280px;
   .fitRadioBackground {
     padding-top: 100px;
-    width: 75%;
+    width: 75vw;
     overflow: hidden;
     height: calc(100% - 280px);
     position: absolute;
@@ -375,18 +375,21 @@
     }
     .phone {
       margin-top: 25px;
+      border-radius: 57px;
+      box-shadow: 60px 60px 60px #ccc;
     }
   }
 }
 
 .forgymsTrainers {
+  margin-top: -400px;
   position: relative;
   padding-top: 0px;
   overflow: hidden;
-  padding-bottom: 200px;
+  padding-bottom: 260px;
   .forgymsTrainersBackground {
     padding-top: 100px;
-    width: 75%;
+    width: 75vw;
     margin-left: 25%;
     overflow: hidden;
     height: calc(100% - 280px);
@@ -405,8 +408,8 @@
   }
 
   .forgymsTrainersBlock {
-    padding: 96px 0;
-    padding-bottom: 180px;
+    padding: 70px 0;
+    padding-bottom: 220px;
     position: relative;
     z-index: 2;
     display: flex;
@@ -414,17 +417,38 @@
     align-items: center;
 
     .forgymsTrainersText {
-      max-width: 512px;
-      margin-left: 128px;
+      max-width: 574px;
+      margin-left: 140px;
+      img {
+        display: inline-block;
+      }
+      .pro {
+        color: $main_color;
+        display: inline-block;
+        background: rgba(235, 167, 70, 0.2);
+        border-radius: 2px;
+        font-family: $main_font_semibold;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 22px;
+        width: 35px;
+        height: 22px;
+        text-align: center;
+        vertical-align: middle;
+        text-transform: uppercase;
+        margin-left: 5px;
+      }
       h2 {
         font-family: $supporting_font_bold;
         font-style: normal;
         font-weight: bold;
         font-size: 80px;
         line-height: 100%;
-        /* identical to box height, or 80px */
         letter-spacing: 1px;
         color: white;
+        margin-top: 5px;
+        margin-bottom: 17px;
         span {
           color: $orange;
         }
@@ -432,7 +456,7 @@
       .about {
         font-family: $main_font;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 400;
         font-size: 16px;
         line-height: 140%;
         letter-spacing: 1px;
@@ -440,7 +464,8 @@
         margin-bottom: 24px;
       }
       ul {
-        padding-left: 60px;
+        margin-top: 36px;
+        padding-left: 50px;
         list-style-image: url("../../assets/images/icon-check.svg");
         li {
           font-family: $main_font;
@@ -448,7 +473,7 @@
           font-weight: 500;
           font-size: 16px;
           line-height: 140%;
-          margin-bottom: 24px;
+          margin-bottom: 20px;
           color: white;
         }
       }
@@ -462,13 +487,19 @@
         vertical-align: middle;
         text-align: center;
         border-radius: 100px;
+        margin-top: 20px;
       }
+    }
+    .phone {
+      margin-top: 25px;
+      border-radius: 57px;
+      margin-left: -20px;
     }
   }
 }
 .usersChooseFitradio {
   text-align: center;
-
+  margin-top: -260px;
   p {
     font-family: $main_font_bold;
     font-style: normal;
@@ -476,6 +507,9 @@
     font-size: 16px;
     line-height: 18px;
     color: $black;
+    margin-bottom: 26px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
   }
   h2 {
     font-family: $supporting_font_bold;
@@ -502,6 +536,7 @@
     vertical-align: middle;
     text-align: center;
     border-radius: 100px;
+    margin-top: 45px;
   }
 }
 .quote {
