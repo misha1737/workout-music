@@ -41,6 +41,7 @@
     border: none;
     background: transparent;
     cursor: pointer;
+    padding: 0;
   }
 }
 
@@ -71,15 +72,18 @@
     }
   }
   .slick-arrow {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    top: -33px;
+    top: -10px;
+    @media (min-width: 1200px) {
+      top: -33px;
+    }
     &.slick-prev {
       right: 12vw;
     }
     &.slick-next {
-      right: 9.7vw;
+      right: 8vw;
+      @media (min-width: 1200px) {
+        right: 9.7vw;
+      }
     }
   }
 }
@@ -107,13 +111,9 @@
   .community-slider {
     padding: 80px 0;
     .slick-arrow {
-      position: absolute;
-      width: 40px;
-      height: 40px;
       top: calc(50% - 21px);
       background-color: $white;
       border-radius: 50%;
-      padding: 12px;
       &.slick-prev {
         left: 1vw;
       }
