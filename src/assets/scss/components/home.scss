@@ -245,3 +245,54 @@
     border-radius: 100px;
   }
 }
+.fitRadio {
+  position: relative;
+  padding-top: 140px;
+  overflow: hidden;
+  padding-bottom: 140px;
+  .fitRadioBackground {
+    padding-top: 73px;
+    width: 80%;
+    overflow: hidden;
+    height: calc(100% - 280px);
+    position: absolute;
+    .background {
+      z-index: 1;
+      content: "";
+      display: inline-block;
+      width: 200%;
+      height: calc(100% - 280px);
+      background: black;
+      position: absolute;
+      transform: rotate(-7deg);
+      margin-left: -50%;
+    }
+  }
+
+  .fitRadioBlock {
+    padding: 160px 0;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    h2 {
+    }
+    .about {
+    }
+    ul {
+      li {
+      }
+    }
+    a.button {
+      color: white;
+      width: 300px;
+      height: 50px;
+      background-color: $orange;
+      display: inline-block;
+      line-height: 50px;
+      vertical-align: middle;
+      text-align: center;
+      border-radius: 100px;
+    }
+  }
+}
