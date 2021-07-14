@@ -49,9 +49,9 @@
       color: #272c30;
       cursor: pointer;
       transition: all 0.5s;
-      &.is-active {
-        color: $orange;
-      }
+      // &.is-active {
+      //   color: $orange;
+      // }
       &:hover {
         opacity: 0.7;
       }
