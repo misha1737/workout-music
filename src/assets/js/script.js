@@ -14,4 +14,13 @@ $(document).ready(function () {
     $("html").removeClass("overflow");
     $(".navbar-wrapper").removeClass("navbar-open-menu");
   });
+
+  // slick
+  $('.slick-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
+
 });

@@ -14,7 +14,7 @@
     top: 0;
     bottom: 0;
     h1 {
-      font-family: Bebas Neue;
+      font-family: $supporting_font_bold;
       font-style: normal;
       font-weight: bold;
       font-size: 100px;
@@ -40,7 +40,7 @@
 }
 .logowall {
   p {
-    font-family: Montserrat;
+    font-family: $main_font_semibold;
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
@@ -111,14 +111,14 @@
             padding-bottom: 6px;
             h6 {
               color: white;
-              font-family: Montserrat;
+              font-family: $main_font_bold;
               font-style: normal;
               font-weight: bold;
               font-size: 14px;
               line-height: 17px;
             }
             p {
-              font-family: Montserrat;
+              font-family: $main_font_semibold;
               font-style: normal;
               font-weight: 400;
               font-size: 12px;
@@ -148,6 +148,7 @@
       weight: 700;
       color: white;
       line-height: 100%;
+      font-family: $supporting_font_bold;
       span {
         color: $orange;
       }
@@ -174,14 +175,14 @@
           margin-left: 15px;
           color: white;
           h4 {
-            font-family: Montserrat;
+            font-family: $main_font_bold;
             font-style: normal;
             font-weight: 700;
             font-size: 18px;
             line-height: 22px;
           }
           p {
-            font-family: Montserrat;
+            font-family: $main_font_semibold;
             font-style: normal;
             font-weight: 400;
             font-size: 12px;
@@ -215,7 +216,7 @@
     text-align: center;
   }
   h2 {
-    font-family: Bebas Neue;
+    font-family: $supporting_font_bold;
     font-style: normal;
     font-weight: bold;
     font-size: 80px;
@@ -226,7 +227,7 @@
     }
   }
   p {
-    font-family: Montserrat;
+    font-family: $main_font_semibold;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -276,6 +277,14 @@
     display: flex;
     align-items: center;
     h2 {
+      font-family: $supporting_font_bold;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 80px;
+      line-height: 100%;
+      /* identical to box height, or 80px */
+      letter-spacing: 1px;
+      color: white;
     }
     .about {
     }
