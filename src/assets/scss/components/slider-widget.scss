@@ -1,5 +1,5 @@
 .cardio-coach {
-  padding: 150px 0;
+  padding: 150px 0 100px;
   .title {
     font-size: 80px;
     letter-spacing: 1.5px;
@@ -14,7 +14,9 @@
 }
 
 .slider {
-  padding: 45px 0 0;
+  .slick-track {
+    padding: 45px 0;
+  }
   .slick-slide {
     margin: 0 15px;
   }
@@ -22,6 +24,7 @@
     position: relative;
     overflow: hidden;
     border-radius: 12px;
+    box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.25);
     img {
       border-radius: 12px;
       width: 100%;
@@ -35,6 +38,10 @@
     width: 42px;
     height: 42px;
     z-index: 9;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
   }
 }
 
@@ -65,15 +72,18 @@
     }
   }
   .slick-arrow {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    top: -33px;
+    top: -10px;
+    @media (min-width: 1200px) {
+      top: -33px;
+    }
     &.slick-prev {
       right: 12vw;
     }
     &.slick-next {
-      right: 9.7vw;
+      right: 8vw;
+      @media (min-width: 1200px) {
+        right: 9.7vw;
+      }
     }
   }
 }
@@ -96,16 +106,15 @@
     font-family: $main_font_semibold;
     color: #5e6469;
   }
+  .btn {
+    margin: 0 auto;
+  }
   .community-slider {
     padding: 80px 0;
     .slick-arrow {
-      position: absolute;
-      width: 40px;
-      height: 40px;
       top: calc(50% - 21px);
       background-color: $white;
       border-radius: 50%;
-      padding: 12px;
       &.slick-prev {
         left: 1vw;
       }

@@ -28,16 +28,19 @@ $(document).ready(function () {
       "<button type='button' class='slick-next pull-right'><i class='fas fa-arrow-right'></i></button>",
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1200,
         settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: "40px",
           slidesToShow: 3,
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 540,
         settings: {
           arrows: false,
           centerMode: true,
