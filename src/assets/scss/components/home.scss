@@ -1,5 +1,6 @@
 .headerBanner {
   position: relative;
+  margin-bottom: 145px;
   .headerBannerImages {
     display: flex;
     justify-content: flex-end;
@@ -53,7 +54,7 @@
 }
 .logowall {
   p {
-    font-family: $Montserrat-Light;
+    font-family: $main_font_light;
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
@@ -69,6 +70,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 1200px;
+    margin: auto;
     img {
       margin: 0 60px;
       margin-bottom: 40px;
@@ -90,24 +93,24 @@
     height: calc(100% - 280px);
     background: black;
     position: absolute;
-    transform: rotate(-7deg);
+    transform: rotate(-6.8deg);
     margin-left: -50%;
   }
   .poppularDjsBlock {
-    padding: 160px 0;
+    padding: 130px 0;
     position: relative;
     z-index: 2;
     display: flex;
     .djs {
       display: flex;
       .djContent {
-        width: 220px;
         border-radius: 8px;
-        margin-top: 40px;
+        margin-top: 60px;
         &:first-child {
-          margin-top: 0px;
+          margin-top: 20px;
         }
         .djBlock {
+          width: 220px;
           position: relative;
           margin-right: 15px;
           margin-bottom: 20px;
@@ -121,18 +124,18 @@
             background: rgba(0, 0, 0, 0.5);
             width: 100%;
             padding: 12px;
-            padding-top: 11px;
-            padding-bottom: 6px;
+            padding-top: 9px;
+            padding-bottom: 8px;
             h6 {
               color: white;
               font-family: $main_font_bold;
               font-style: normal;
-              font-weight: bold;
+              font-weight: 700;
               font-size: 14px;
               line-height: 17px;
             }
             p {
-              font-family: $main_font_semibold;
+              font-family: $main_font_light;
               font-style: normal;
               font-weight: 400;
               font-size: 12px;
@@ -143,26 +146,32 @@
           .playIcon {
             position: absolute;
             top: 0;
-            bottom: 40px;
+            bottom: 60px;
             left: 0;
             right: 0;
-            width: 50px;
-            height: 50px;
+            width: 66px;
+            height: 66px;
             display: inline-block;
             margin: auto;
+            &.konfliktIcon {
+              bottom: 30px;
+            }
           }
         }
       }
     }
   }
   .aboutMusic {
-    margin-left: 163px;
+    margin-left: 148px;
     h2 {
       font-size: 80px;
-      weight: 700;
+      font-weight: 700;
       color: white;
       line-height: 100%;
       font-family: $supporting_font_bold;
+      max-width: 480px;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
       span {
         color: $orange;
       }
@@ -170,6 +179,12 @@
     .subtitle {
       color: white;
       margin-bottom: 42px;
+      font-family: $main_font_light;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      letter-spacing: 1px;
     }
     .musicList {
       li {
@@ -183,6 +198,11 @@
         img {
           width: 52px;
           height: 52px;
+        }
+        .playIcon img {
+          width: 44px;
+          height: 44px;
+          margin-right: 10px;
         }
         .text {
           flex-grow: 1;
@@ -211,7 +231,7 @@
   position: relative;
   .RunLikeAnAthleteImage {
     width: 100%;
-    margin-top: calc(-130px - 5vw);
+    margin-top: calc(-135px - 5vw);
     img {
       width: 100%;
     }
@@ -236,17 +256,21 @@
     font-size: 80px;
     line-height: 100%;
     color: white;
+    letter-spacing: 1px;
+    margin-bottom: 13px;
     span {
       color: $orange;
     }
   }
   p {
-    font-family: $main_font_semibold;
+    font-family: $main_font_light;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 140%;
     color: white;
+    margin-bottom: 27px;
+    letter-spacing: 1px;
   }
   a.button {
     color: white;
@@ -286,15 +310,19 @@
 
   .fitRadioBlock {
     padding: 160px 0;
+    padding-top: 115px;
     position: relative;
     z-index: 2;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
     .fitRadioText {
       max-width: 512px;
-      margin-right: 128px;
+      margin-right: 126px;
+      .logo {
+        margin-bottom: 10px;
+      }
       h2 {
         font-family: $supporting_font_bold;
         font-style: normal;
@@ -304,6 +332,7 @@
         /* identical to box height, or 80px */
         letter-spacing: 1px;
         color: white;
+        margin-bottom: 14px;
         span {
           color: $orange;
         }
@@ -316,10 +345,10 @@
         line-height: 140%;
         letter-spacing: 1px;
         color: white;
-        margin-bottom: 24px;
+        margin-bottom: 20px;
       }
       ul {
-        padding-left: 60px;
+        padding-left: 53px;
         list-style-image: url("../../assets/images/icon-check.svg");
         li {
           font-family: $main_font;
@@ -327,7 +356,7 @@
           font-weight: 500;
           font-size: 16px;
           line-height: 140%;
-          margin-bottom: 24px;
+          margin-bottom: 20px;
           color: white;
         }
       }
@@ -341,16 +370,20 @@
         vertical-align: middle;
         text-align: center;
         border-radius: 100px;
+        margin-top: 20px;
       }
+    }
+    .phone {
+      margin-top: 25px;
     }
   }
 }
 
 .forgymsTrainers {
   position: relative;
-  padding-top: 140px;
+  padding-top: 0px;
   overflow: hidden;
-  padding-bottom: 140px;
+  padding-bottom: 200px;
   .forgymsTrainersBackground {
     padding-top: 100px;
     width: 75%;
@@ -377,12 +410,12 @@
     position: relative;
     z-index: 2;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
     .forgymsTrainersText {
       max-width: 512px;
-      margin-right: 128px;
+      margin-left: 128px;
       h2 {
         font-family: $supporting_font_bold;
         font-style: normal;
