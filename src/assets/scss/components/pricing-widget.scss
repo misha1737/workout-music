@@ -1,0 +1,187 @@
+.pricing-wrap {
+  padding: 171px 0;
+  position: relative;
+  &::before {
+    content: "";
+    background: url(../images/top-pricing-img.svg) no-repeat;
+    background-position: 40px 0;
+    position: absolute;
+    top: -60px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  &::after {
+    content: "";
+    background: url(../images/bottom-pricing-img.svg) no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 320px;
+    width: 382px;
+  }
+  @media (max-width: 991px) {
+    padding: 90px 0 0;
+  }
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+  .hero-sub-title {
+    font-family: $supporting_font_thin;
+    font-size: 48px;
+    color: $white;
+    @media (max-width: 991px) {
+      font-size: 42px;
+    }
+    @media (max-width: 767px) {
+      font-size: 38px;
+    }
+    @media (max-width: 480px) {
+      font-size: 34px;
+    }
+  }
+  .head-holder {
+    text-align: center;
+    margin: 0 0 84px;
+    @media (max-width: 991px) {
+      margin: 0 0 70px;
+    }
+    @media (max-width: 767px) {
+      margin: 0 0 60px;
+    }
+    @media (max-width: 480px) {
+      margin: 0 0 50px;
+    }
+  }
+  .pricing-item {
+    padding: 37px 24px;
+    background-color: #111011;
+    position: relative;
+    height: 100%;
+    @media (max-width: 991px) {
+      max-width: 400px;
+      margin: 0 auto 50px;
+    }
+
+    &.pricing-description {
+      background-color: $white;
+      max-width: 340px;
+    }
+
+    &__head {
+      text-align: center;
+      padding: 0 0 13px;
+      .item-sale {
+        position: absolute;
+        top: -20px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        p {
+          color: #0f0f10;
+          font-size: 24px;
+          font-family: $supporting_font_bold;
+          background: $white;
+          border-radius: 2px;
+          padding: 5px 16px;
+          margin: 0;
+          display: inline-block;
+        }
+      }
+      .item-title {
+        font-size: 24px;
+        font-family: $supporting_font_bold;
+        letter-spacing: 2px;
+        color: $orange;
+        text-transform: uppercase;
+        margin: 0 0 19px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .pro {
+          color: #eba746;
+          font-family: $main_font_semibold;
+          font-size: 10px;
+          padding: 3px 5px;
+          background: rgba(235, 167, 70, 0.2);
+          border-radius: 2px;
+          margin-left: 10px;
+        }
+      }
+      .item-price {
+        color: $white;
+        font-family: $supporting_font_bold;
+        font-size: 40px;
+        margin: 0;
+        @media (max-width: 991px) {
+          font-size: 34px;
+        }
+        @media (max-width: 767px) {
+          font-size: 28px;
+        }
+        .digit {
+          font-size: 64px;
+          line-height: 1;
+          @media (max-width: 991px) {
+            font-size: 58px;
+          }
+          @media (max-width: 767px) {
+            font-size: 50px;
+          }
+        }
+      }
+      .item-billed {
+        font-size: 18px;
+        color: #5e6469;
+        font-family: $supporting_font_bold;
+        text-transform: uppercase;
+      }
+    }
+
+    &__main {
+      ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+      }
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        min-height: 62px;
+        &:not(:last-child) {
+          border-bottom: 1px solid rgba(#eae9e9, 0.1);
+          //   border-bottom: 1px solid #eae9e9;
+        }
+        .img-ico {
+          max-width: 32px;
+          max-height: 32px;
+        }
+      }
+    }
+    &__foot {
+      text-align: center;
+      padding: 30px 0 0;
+      p {
+        font-size: 10px;
+        line-height: 1.5;
+        color: rgba($white, 0.75);
+        padding: 40px 0 0;
+      }
+    }
+  }
+
+  .btn {
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: $main_font;
+    padding: 15px 0 13px;
+    letter-spacing: 0;
+    text-transform: none;
+    transition: all 0.25s;
+    max-width: 100%;
+  }
+}
