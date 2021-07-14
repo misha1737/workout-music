@@ -9,10 +9,13 @@
   }
   .headerBannerContent {
     position: absolute;
-    height: 300px;
+    height: 200px;
     margin: auto;
     top: 0;
     bottom: 0;
+    left: 0;
+    right: 0;
+    width: 870px;
     h1 {
       font-family: $supporting_font_bold;
       font-style: normal;
@@ -21,26 +24,36 @@
       letter-spacing: 0.02em;
       text-transform: uppercase;
       color: $black;
+      max-width: 800px;
+      line-height: 90px;
       span {
-        color: $orange;
+        display: block;
+        font-size: 120px;
+        line-height: 108px;
+        color: $main_color;
       }
     }
     a.button {
       color: white;
-      width: 300px;
+      width: 276px;
       height: 50px;
-      background-color: $orange;
+      background-color: $black;
       display: inline-block;
       line-height: 50px;
       vertical-align: middle;
       text-align: center;
       border-radius: 100px;
+      margin-top: 33px;
+      transition: 0.3s;
+      &:hover {
+        background-color: $orange;
+      }
     }
   }
 }
 .logowall {
   p {
-    font-family: $main_font_semibold;
+    font-family: $Montserrat-Light;
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
@@ -48,6 +61,7 @@
     text-align: center;
     margin: 65px;
     span {
+      font-family: $main_font_semibold;
       font-weight: 700;
     }
   }
@@ -252,8 +266,8 @@
   overflow: hidden;
   padding-bottom: 140px;
   .fitRadioBackground {
-    padding-top: 73px;
-    width: 80%;
+    padding-top: 100px;
+    width: 75%;
     overflow: hidden;
     height: calc(100% - 280px);
     position: absolute;
@@ -275,33 +289,241 @@
     position: relative;
     z-index: 2;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    h2 {
-      font-family: $supporting_font_bold;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 80px;
-      line-height: 100%;
-      /* identical to box height, or 80px */
-      letter-spacing: 1px;
-      color: white;
-    }
-    .about {
-    }
-    ul {
-      li {
+
+    .fitRadioText {
+      max-width: 512px;
+      margin-right: 128px;
+      h2 {
+        font-family: $supporting_font_bold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 80px;
+        line-height: 100%;
+        /* identical to box height, or 80px */
+        letter-spacing: 1px;
+        color: white;
+        span {
+          color: $orange;
+        }
+      }
+      .about {
+        font-family: $main_font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: 1px;
+        color: white;
+        margin-bottom: 24px;
+      }
+      ul {
+        padding-left: 60px;
+        list-style-image: url("../../assets/images/icon-check.svg");
+        li {
+          font-family: $main_font;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 140%;
+          margin-bottom: 24px;
+          color: white;
+        }
+      }
+      a.button {
+        color: white;
+        width: 300px;
+        height: 50px;
+        background-color: $orange;
+        display: inline-block;
+        line-height: 50px;
+        vertical-align: middle;
+        text-align: center;
+        border-radius: 100px;
       }
     }
-    a.button {
-      color: white;
-      width: 300px;
-      height: 50px;
-      background-color: $orange;
+  }
+}
+
+.forgymsTrainers {
+  position: relative;
+  padding-top: 140px;
+  overflow: hidden;
+  padding-bottom: 140px;
+  .forgymsTrainersBackground {
+    padding-top: 100px;
+    width: 75%;
+    margin-left: 25%;
+    overflow: hidden;
+    height: calc(100% - 280px);
+    position: absolute;
+    .background {
+      z-index: 1;
+      content: "";
       display: inline-block;
-      line-height: 50px;
-      vertical-align: middle;
-      text-align: center;
-      border-radius: 100px;
+      width: 200%;
+      height: calc(100% - 280px);
+      background: black;
+      position: absolute;
+      transform: rotate(-7deg);
+      margin-left: -50%;
+    }
+  }
+
+  .forgymsTrainersBlock {
+    padding: 96px 0;
+    padding-bottom: 180px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .forgymsTrainersText {
+      max-width: 512px;
+      margin-right: 128px;
+      h2 {
+        font-family: $supporting_font_bold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 80px;
+        line-height: 100%;
+        /* identical to box height, or 80px */
+        letter-spacing: 1px;
+        color: white;
+        span {
+          color: $orange;
+        }
+      }
+      .about {
+        font-family: $main_font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: 1px;
+        color: white;
+        margin-bottom: 24px;
+      }
+      ul {
+        padding-left: 60px;
+        list-style-image: url("../../assets/images/icon-check.svg");
+        li {
+          font-family: $main_font;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 140%;
+          margin-bottom: 24px;
+          color: white;
+        }
+      }
+      a.button {
+        color: white;
+        width: 300px;
+        height: 50px;
+        background-color: $orange;
+        display: inline-block;
+        line-height: 50px;
+        vertical-align: middle;
+        text-align: center;
+        border-radius: 100px;
+      }
+    }
+  }
+}
+.usersChooseFitradio {
+  text-align: center;
+
+  p {
+    font-family: $main_font_bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    color: $black;
+  }
+  h2 {
+    font-family: $supporting_font_bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 1px;
+    color: $black;
+    max-width: 795px;
+    margin: auto;
+    span {
+      color: $orange;
+    }
+  }
+  a.button {
+    color: white;
+    width: 300px;
+    height: 50px;
+    background-color: $orange;
+    display: inline-block;
+    line-height: 50px;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 100px;
+  }
+}
+.quote {
+  position: relative;
+  padding-top: 140px;
+  overflow: hidden;
+  padding-bottom: 140px;
+  &:before {
+    z-index: 1;
+    content: "";
+    display: inline-block;
+    width: 200%;
+    height: calc(100% - 280px);
+    background: black;
+    position: absolute;
+    transform: rotate(-7deg);
+    margin-left: -50%;
+  }
+  .quoteContent {
+    z-index: 2;
+    position: relative;
+    padding: 160px 0;
+    text-align: center;
+    .quoteText {
+      font-family: $main_font_light;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 32px;
+      line-height: 120%;
+      color: white;
+      &::before {
+        content: "";
+        background-image: url("../../assets/images/quoteLeft.svg");
+        width: 138px;
+        height: 98px;
+      }
+      span {
+        color: $orange;
+      }
+    }
+    .quoteAutor {
+      color: white;
+      font-family: $main_font_bold;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 24px;
+    }
+    .quoteAutorPosition {
+      color: white;
+      font-family: $main_font_light;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
     }
   }
 }
