@@ -145,6 +145,14 @@ ul {
     z-index: 3;
   }
 }
+.text-center {
+  text-align: center;
+}
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 .supporting-bold {
   font-family: $supporting_font_bold;
@@ -164,4 +172,12 @@ ul {
 }
 .orange {
   color: $orange;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  @media (min-width: 1200px) {
+    max-width: 1190px;
+  }
 }
