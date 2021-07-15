@@ -1,0 +1,83 @@
+.downloadApp {
+  background: #0e0f12;
+  position: relative;
+
+  &::before {
+    content: "";
+    background: url(../images/top-download-img.svg) no-repeat;
+    background-position: right 0% bottom 0%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+  }
+
+  .downloadAppBlock {
+    display: flex;
+    padding-top: 183px;
+    .phones {
+      z-index: 1;
+      position: relative;
+      img {
+        max-width: 620px;
+        margin-right: 80px;
+      }
+    }
+    .downloadContent {
+      h2 {
+        color: white;
+        font-family: $supporting_font_bold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 120px;
+        line-height: 90%;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        span {
+          color: $orange;
+        }
+      }
+      p {
+        color: white;
+        font-family: $main_font_light;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 125%;
+        letter-spacing: 1px;
+      }
+      .buttons {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        a {
+          background-color: white;
+          color: $black;
+          width: 100%;
+          font-family: $main_font_semibold;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 18px;
+          border-radius: 100px;
+          margin-bottom: 20px;
+          padding: 19px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: 0.3s;
+          &:hover {
+            background-color: $orange;
+          }
+          svg {
+            margin-right: 14px;
+          }
+        }
+      }
+    }
+  }
+}
