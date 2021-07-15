@@ -5,7 +5,7 @@
 .navbar-wrapper {
   z-index: 20;
   position: relative;
-  @media (max-width: 767px) {
+  @media (max-width: 991px) {
     padding: 20px 0;
   }
   .logo {
@@ -18,7 +18,6 @@
     padding-right: 0;
     width: 100%;
     max-width: 220px;
-    margin-left: 45px;
     @media (max-width: 480px) {
       max-width: 170px;
     }
@@ -42,8 +41,18 @@
     line-height: 2.5;
     font-size: 14px;
     position: relative;
-    &:not(:last-child) {
-      padding: 12px 24px;
+    padding: 13px 31px;
+    @media (min-width: 992px) {
+      &:not(:last-child) {
+        padding: 17px 22px;
+        // @media only screen and (max-width: 767px) {
+        //   padding: 13px 31px;
+        // }
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      text-transform: capitalize;
+      font-size: 20px;
     }
   }
   li {
@@ -56,6 +65,18 @@
       transition: all 0.5s;
       &.is-active {
         color: $orange;
+        position: relative;
+        @media only screen and (max-width: 767px) {
+          &::after {
+            content: "";
+            position: absolute;
+            background-color: $orange;
+            width: 8px;
+            height: calc(100% + 3px);
+            left: -31px;
+            top: -3px;
+          }
+        }
       }
       &:hover {
         opacity: 0.7;
@@ -65,7 +86,21 @@
   .btn {
     padding: 10px 17px;
     font-size: 12px;
-    margin-right: 43px;
+    @media only screen and (max-width: 767px) {
+      padding: 15px 0px 13px;
+      font-size: 16px;
+      max-width: 335px;
+      margin: auto;
+      margin-top: 267px;
+    }
+  }
+}
+.logo-mob {
+  @media only screen and (min-width: 992px) {
+    display: none;
+  }
+  @media only screen and (max-width: 991px) {
+    padding: 24px 21px 22px;
   }
 }
 /*mobile header btn*/
@@ -210,13 +245,13 @@
   // opacity: 0.2;
   border-radius: 50%;
   z-index: 12;
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     display: none;
   }
 }
 /*END mobile header btn*/
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
   .list-menu {
     max-width: 100%;
     width: 100%;
@@ -244,7 +279,12 @@
   .menu-open {
     right: 0;
     top: 0;
-    min-width: 320px;
     position: fixed;
+    @media (max-width: 991px) {
+      min-width: 40%;
+    }
+    @media (max-width: 767px) {
+      min-width: 100%;
+    }
   }
 }
