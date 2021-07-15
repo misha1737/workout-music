@@ -37,8 +37,9 @@
     font-weight: 400;
     font-family: $main_font;
     color: $white;
-    line-height: 1.2;
+    line-height: 1.4;
     max-width: 450px;
+    letter-spacing: 1px;
     @media (max-width: 767px) {
       font-size: 14px;
     }
@@ -57,9 +58,9 @@
     text-transform: none;
     letter-spacing: 0;
     &:hover {
-      background-color: $white;
+      background-color: $orange;
       border: 1px solid $white;
-      color: $black;
+      color: white;
     }
   }
   .content-wrap {
