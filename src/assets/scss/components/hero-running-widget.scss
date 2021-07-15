@@ -1,12 +1,16 @@
-.hero-running {
+.hero-combined {
   background-image: url('../images/running-hero.png');
   background-size: 100%;
-  padding: 340px 0;
+  background-repeat: no-repeat;
+}
+.hero-running {
+  padding: 240px 0 227px;
   text-align: center;
   color: $white;
   .text {
     color: #EAE9E9;
     font-family: $main_font_light;
     font-size: 16px;
+    margin: 8px 0 0;
   }
 }

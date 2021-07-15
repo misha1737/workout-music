@@ -98,15 +98,24 @@ ul {
   }
 }
 
+// .section-title {
+//   font-size: 30px;
+//   line-height: 1;
+//   margin-bottom: 50px;
+//   @media (min-width: 1024px) {
+//     font-size: 38px;
+//     line-height: 1.5;
+//   }
+// }
+
 .section-title {
-  font-size: 30px;
+  color: $black;
+  font-size: 80px;
+  font-family: $supporting_font_bold;
+  letter-spacing: 1px;
   line-height: 1;
-  margin-bottom: 50px;
-  @media (min-width: 1024px) {
-    font-size: 38px;
-    line-height: 1.5;
-  }
 }
+
 .btn {
   display: flex;
   justify-content: center;

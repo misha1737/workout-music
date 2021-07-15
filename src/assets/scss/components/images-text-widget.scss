@@ -1,0 +1,42 @@
+.images-text-widget {
+  .img-wrap {
+    display: flex;
+    justify-content: center;
+    padding-left: 90px;
+  }
+  .text-wrap {
+    padding: 170px 0;
+    margin-left: -30px;
+  }
+  .section-title {
+    margin: 0 0 44px;
+  }
+  .blockquote {
+    color: $white;
+    font-size: 18px;
+    font-family: $main_font_semibold;
+    position: relative;
+    padding: 23px 47px 17px;
+    margin: 0 20px 40px;
+    max-width: 540px;
+    &:before {
+      content: "";
+      background: $black;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      transform: skewX(-22deg);
+    }
+    p {
+      position: relative;
+    }
+  }
+  .text {
+    line-height: 1.4;
+    max-width: 512px;
+  }
+}
