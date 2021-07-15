@@ -1,0 +1,23 @@
+.milestone-widget {
+  background-image: url('../images/milestone.png');
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: contain;
+  position: relative;
+  padding: 310px 0 290px;
+  .text-wrap {
+    padding: 0 25px;
+    .text {
+      color: #5E6469;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-family: $main_font_bold;
+      margin: 0 0 20px;
+    }
+  }
+  .img-wrap {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}

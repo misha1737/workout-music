@@ -7,6 +7,7 @@ $triangle_bottom_height: 160px;
   position: relative;
   padding: 0 0 50px;
   margin-top: 92px;
+  z-index: 2;
   &:before,
   &:after {
     content: "";
@@ -28,6 +29,11 @@ $triangle_bottom_height: 160px;
     bottom: -$triangle_bottom_height;
     border-width: 0 calc(100vw - 17px) $triangle_bottom_height 0 ;
     border-color: transparent #111011 transparent transparent;
+  }
+  .bg-wrap {
+    position: absolute;
+    right: 0;
+    top: 0;
   }
   .text-wrap {
     max-width: 548px;
