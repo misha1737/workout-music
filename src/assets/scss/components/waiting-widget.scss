@@ -1,6 +1,10 @@
 .waiting-wrap {
   background-color: $orange;
   padding: 87px 0 98px;
+  &.oblique {
+    padding: 400px 0 98px;
+    margin-top: -400px;
+  }
   .waiting-container {
     display: flex;
     justify-content: space-between;
