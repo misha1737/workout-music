@@ -52,7 +52,44 @@ $(document).ready(function () {
   });
 
   // tooltip
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip();
-  });
+  // $(function () {
+  //   $('[data-toggle="tooltip"]').tooltip();
+  // });
+
+  // progress section
+  let position = $('.progress-text-widget').offset().top - 200,
+      height = $('.progress-text-widget').height();
+
+  $(document).on('scroll', function (){
+    let scroll = $(document).scrollTop();
+    // if(scroll  > position && scroll < (position + height) ) {
+    if(scroll > position ) {
+      // console.log(position)
+      $('.list-wrap li:nth-child(1)').addClass('active');
+    } else {
+      $('.list-wrap li').removeClass('active');
+    }
+
+    if(scroll  > (position + (height/10)) ) {
+      // console.log(position + (height/10))
+      $('.list-wrap li:nth-child(2)').addClass('active');
+    }
+    if(scroll  > (position + (height/5)) ) {
+      // console.log('333')
+      $('.list-wrap li:nth-child(3)').addClass('active');
+    }
+    if(scroll  > (position + (height/2)) ) {
+      // console.log('333')
+      $('.list-wrap li:nth-child(4)').addClass('active');
+    }
+
+
+  })
+
+
+
+
+
+
+
 });
