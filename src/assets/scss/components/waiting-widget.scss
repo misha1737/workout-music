@@ -52,6 +52,11 @@
   //     position: relative;
   //     z-index: 2;
   //   }
+  &.oblique {
+    padding: 400px 0 98px;
+    margin-top: -400px;
+  }
+
   .waiting-container {
     display: flex;
     justify-content: space-between;
