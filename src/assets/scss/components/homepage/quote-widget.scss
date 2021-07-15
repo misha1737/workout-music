@@ -1,0 +1,75 @@
+.quote {
+  position: relative;
+  padding-top: 140px;
+  overflow: hidden;
+  padding-bottom: 80px;
+  &:before {
+    z-index: 1;
+    content: "";
+    display: inline-block;
+    width: 200%;
+    height: calc(100% - 280px);
+    background: black;
+    position: absolute;
+    transform: rotate(-4.6deg);
+    margin-left: -50%;
+  }
+  .quoteContent {
+    z-index: 2;
+    position: relative;
+    padding: 200px 0;
+    text-align: center;
+    max-width: 950px;
+    .quoteText {
+      position: relative;
+      font-family: $main_font_light;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 120%;
+      color: white;
+      margin-bottom: 30px;
+      opacity: 0.75;
+      &::before {
+        top: -50px;
+        left: -35px;
+        position: absolute;
+        content: "";
+        background-image: url("../../assets/images/quote-left.svg");
+        width: 138px;
+        height: 98px;
+        display: inline-block;
+      }
+      &::after {
+        bottom: -45px;
+        right: 30px;
+        position: absolute;
+        content: "";
+        background-image: url("../../assets/images/quote-right.svg");
+        width: 138px;
+        height: 98px;
+        display: inline-block;
+      }
+      span {
+        color: $orange;
+      }
+    }
+    .quoteAutor {
+      color: white;
+      font-family: $main_font_bold;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 24px;
+      margin: 0px;
+    }
+    .quoteAutorPosition {
+      color: white;
+      font-family: $main_font_light;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}

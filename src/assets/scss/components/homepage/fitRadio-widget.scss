@@ -1,0 +1,100 @@
+.fitRadio {
+  position: relative;
+  padding-top: 0px;
+  overflow: hidden;
+  padding-bottom: 280px;
+  .fitRadioBackground {
+    padding-top: 100px;
+    width: 75vw;
+    overflow: hidden;
+    height: calc(100% - 280px);
+    position: absolute;
+    .background {
+      z-index: 1;
+      content: "";
+      display: inline-block;
+      width: 200%;
+      height: calc(100% - 280px);
+      background: black;
+      position: absolute;
+      transform: rotate(-7deg);
+      margin-left: -50%;
+    }
+  }
+
+  .fitRadioBlock {
+    padding: 160px 0;
+    padding-top: 115px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .fitRadioText {
+      max-width: 512px;
+      margin-right: 126px;
+      .logo {
+        margin-bottom: 10px;
+      }
+      h2 {
+        font-family: $supporting_font_bold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 80px;
+        line-height: 100%;
+        /* identical to box height, or 80px */
+        letter-spacing: 1px;
+        color: white;
+        margin-bottom: 14px;
+        span {
+          color: $orange;
+        }
+      }
+      .about {
+        font-family: $main_font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: 1px;
+        color: white;
+        margin-bottom: 20px;
+      }
+      ul {
+        padding-left: 53px;
+        list-style-image: url("../../assets/images/icon-check.svg");
+        li {
+          font-family: $main_font;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 140%;
+          margin-bottom: 20px;
+          color: white;
+        }
+      }
+      a.button {
+        color: white;
+        width: 300px;
+        height: 50px;
+        background-color: $orange;
+        display: inline-block;
+        line-height: 50px;
+        vertical-align: middle;
+        text-align: center;
+        border-radius: 100px;
+        margin-top: 20px;
+        transition: 0.3s;
+        &:hover {
+          background-color: $black;
+        }
+      }
+    }
+    .phone {
+      margin-top: 25px;
+      border-radius: 57px;
+      box-shadow: 60px 60px 60px #ccc;
+    }
+  }
+}

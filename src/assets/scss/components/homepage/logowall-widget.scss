@@ -1,0 +1,30 @@
+.logowall {
+  p {
+    font-family: $main_font_light;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 24px;
+    text-align: center;
+    margin: 65px;
+    span {
+      font-family: $main_font_semibold;
+      font-weight: 700;
+    }
+  }
+  .logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+    img {
+      margin: 0 60px;
+      margin-bottom: 40px;
+      max-width: 202px;
+    }
+    .ncfit {
+      height: 44px;
+    }
+  }
+}

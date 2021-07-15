@@ -36,7 +36,11 @@
         letter-spacing: 0.02em;
         text-transform: uppercase;
         span {
+          color: linear-gradient(135deg, $orange 50%, #dc603b 100%);
+          background: linear-gradient(135deg, $orange 50%, #dc603b 100%);
           color: $orange;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
         }
       }
       p {
