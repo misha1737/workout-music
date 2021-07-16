@@ -128,3 +128,20 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .cardio-coach {
+    padding: 70px 0 100px;
+    .title {
+      font-size: 62px;
+      line-height: 90%;
+    }
+  }
+  .community-section {
+    margin-top: -300px;
+    .title {
+      font-size: 62px;
+      line-height: 90%;
+    }
+  }
+}

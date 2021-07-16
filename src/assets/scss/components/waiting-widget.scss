@@ -98,3 +98,39 @@
     letter-spacing: 2px;
   }
 }
+@media (max-width: 1200px) {
+  .waiting-wrap {
+    .waiting-container {
+      text-align: center;
+      .txt {
+        margin: auto;
+      }
+      a.btn {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .waiting-wrap {
+    .waiting-container {
+      a.btn {
+        width: 276px;
+      }
+    }
+    .download-wrap {
+      a {
+        & + a {
+          margin-left: 0px;
+          width: 150px;
+          margin-top: 4px;
+        }
+      }
+    }
+    &.oblique {
+      padding: 100px 0 65px;
+      margin-top: -200px;
+    }
+  }
+}

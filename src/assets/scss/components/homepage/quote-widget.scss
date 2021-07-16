@@ -73,3 +73,30 @@
     }
   }
 }
+@media (max-width: 1200px) {
+  .quote {
+    .quoteContent {
+      max-width: 90%;
+      margin: auto;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .quote {
+    margin-top: -150px;
+    .quoteContent {
+      padding: 100px 0;
+      .quoteText {
+        font-size: 22px;
+        line-height: 130%;
+        &::before {
+          transform: scale(0.5);
+        }
+        &::after {
+          transform: scale(0.5);
+          right: 0;
+        }
+      }
+    }
+  }
+}

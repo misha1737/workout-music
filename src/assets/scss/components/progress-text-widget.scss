@@ -52,6 +52,7 @@ $triangle_bottom_height: 160px;
       width: 25%;
       padding: 0 15px;
       opacity: 0.5;
+      transition: all 0.3s;
       &.active {
         color: $white;
         opacity: 1;
@@ -68,6 +69,7 @@ $triangle_bottom_height: 160px;
         .digit {
           font-size: 64px;
           margin-right: 5px;
+          transition: all 0.3s;
         }
       }
       &-text {
@@ -76,11 +78,19 @@ $triangle_bottom_height: 160px;
       }
     }
   }
-  .progress-line {
-    background-color: $white;
-    opacity: 0.25;
+  .progress-wrap {
+    background-color: rgba($white, 0.25);
     height: 1px;
     width: calc(100% - 50px);
     margin: 10px auto;
+    position: relative;
+  }
+  .progress-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $orange;
+    height: 1px;
+    transition: all 0.3s;
   }
 }

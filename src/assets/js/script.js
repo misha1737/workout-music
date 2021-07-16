@@ -51,11 +51,6 @@ $(document).ready(function () {
     ],
   });
 
-  // tooltip
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip();
-  });
-
   // progress section
   let position = $('.progress-text-widget').offset().top - 200,
     height = $('.progress-text-widget').height();
@@ -65,25 +60,40 @@ $(document).ready(function () {
 
     if (scroll > position) {
       $('.list-wrap li:nth-child(1)').addClass('active');
+      $('.progress-line').css('width', '25%');
     } else {
       $('.list-wrap li:nth-child(1)').removeClass('active');
+      $('.progress-line').css('width', '0');
     }
     if (scroll > (position + ((height / 2) / 4))) {
       $('.list-wrap li:nth-child(2)').addClass('active');
+      $('.progress-line').css('width', '50%');
     } else {
       $('.list-wrap li:nth-child(2)').removeClass('active');
     }
-    if (scroll > (position + ((height / 2) / 2))) {
+    if (scroll > (position + ((height / 2) / 4) * 2)) {
       $('.list-wrap li:nth-child(3)').addClass('active');
+      $('.progress-line').css('width', '75%');
     } else {
       $('.list-wrap li:nth-child(3)').removeClass('active');
     }
-    if (scroll > (position + (height / 2))) {
+    if (scroll > (position + ((height / 2) / 4) * 3)) {
       $('.list-wrap li:nth-child(4)').addClass('active');
+      $('.progress-line').css('width', '100%');
     } else {
       $('.list-wrap li:nth-child(4)').removeClass('active');
     }
 
   })
 
+
+
+
+
 });
+setInterval(() => {
+  $('.mobile .imageHeader:nth-child(1)').toggleClass('active');
+  $('.mobile .imageHeader:nth-child(2)').toggleClass('active');
+  $('.mobile .points .point:nth-child(1)').toggleClass('active');
+  $('.mobile .points .point:nth-child(2)').toggleClass('active');
+}, 5000)

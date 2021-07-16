@@ -118,3 +118,52 @@
     }
   }
 }
+@media (max-width: 1200px) {
+  .forgymsTrainers {
+    .forgymsTrainersBlock {
+      padding: 200px 0;
+      padding-top: 160px;
+      .forgymsTrainersText {
+        max-width: 400px;
+        margin-left: 40px;
+      }
+      .phone {
+        img {
+          max-width: 280px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .forgymsTrainers {
+    margin-top: -535px;
+    .forgymsTrainersBackground {
+      width: 100%;
+      margin-left: 0;
+      .background {
+        width: 300%;
+      }
+    }
+    .forgymsTrainersBlock {
+      padding-top: 180px;
+      padding: 220px 0;
+      .forgymsTrainersText {
+        margin: 0;
+        max-width: 85%;
+        h2 {
+          font-size: 62px;
+          line-height: 90%;
+        }
+        a.button {
+          width: 276px;
+        }
+      }
+    }
+    .phone {
+      img {
+        display: none;
+      }
+    }
+  }
+}

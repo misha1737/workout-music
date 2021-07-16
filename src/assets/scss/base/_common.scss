@@ -191,14 +191,23 @@ ul {
   width: 1110px;
   margin: auto;
 }
+.mobile {
+  display: none;
+}
 @media (max-width: 1200px) {
   .content {
-    width: 768px;
+    width: 750px;
     margin: auto;
   }
 }
 @media (max-width: 768px) {
   .content {
     width: 100%;
+  }
+  .pc {
+    display: none;
+  }
+  .mobile {
+    display: inline-block;
   }
 }

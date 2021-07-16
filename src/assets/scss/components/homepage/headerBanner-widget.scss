@@ -4,6 +4,9 @@
   .headerBannerImages {
     display: flex;
     justify-content: flex-end;
+    &.mobile {
+      display: none;
+    }
     .imageHeader.forPersonalUse {
       margin-right: -308px;
     }
@@ -61,14 +64,89 @@
   .headerBanner {
     .headerBannerImages {
       .imageHeader.forPersonalUse {
-        margin-right: -230px;
-        width: 600px;
+        margin-right: -205px;
+        width: 550px;
       }
       .imageHeader {
-        width: 462px;
+        width: 424px;
         img {
           width: 100%;
         }
+      }
+    }
+    .headerBannerContent {
+      max-width: 100%;
+      h1 {
+        max-width: 100%;
+        margin-left: 40px;
+      }
+      a.button {
+        margin-left: 40px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .headerBanner {
+    margin-bottom: 40px;
+    .headerBannerImages {
+      width: 100%;
+      &.pc {
+        display: none;
+      }
+      &.mobile {
+        display: inline-block;
+      }
+      .imageHeader.forPersonalUse {
+        //position: absolute;
+        max-width: 100%;
+        width: 100%;
+        top: 0;
+      }
+      .imageHeader.forGymsTrainers {
+        max-width: 100%;
+        width: 100%;
+        top: 0;
+      }
+      .imageHeader {
+        display: none;
+        &.active {
+          display: inline-block;
+        }
+      }
+      .points {
+        position: absolute;
+        bottom: 70px;
+        left: 38px;
+        .point {
+          width: 10px;
+          height: 10px;
+          background-color: white;
+          opacity: 0.5;
+          display: inline-block;
+          margin-right: 5px;
+          border-radius: 50%;
+          &.active {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .headerBannerContent {
+      h1 {
+        font-size: 62px;
+        line-height: 90%;
+        color: white;
+        margin-left: 20px;
+        span {
+          font-size: 62px;
+          line-height: 90%;
+        }
+      }
+      a.button {
+        margin-left: 20px;
+        width: 276px;
+        background-color: $orange;
       }
     }
   }

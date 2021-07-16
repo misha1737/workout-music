@@ -43,7 +43,6 @@
         font-weight: bold;
         font-size: 80px;
         line-height: 100%;
-        /* identical to box height, or 80px */
         letter-spacing: 1px;
         color: white;
         margin-bottom: 14px;
@@ -95,6 +94,51 @@
       margin-top: 25px;
       border-radius: 57px;
       box-shadow: 60px 60px 60px #ccc;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .fitRadio {
+    .fitRadioBlock {
+      padding: 200px 0;
+      padding-top: 160px;
+      .fitRadioText {
+        max-width: 400px;
+        margin-right: 40px;
+      }
+      .phone {
+        img {
+          max-width: 280px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .fitRadio {
+    margin-top: -160px;
+    .fitRadioBackground {
+      width: 100%;
+      .background {
+        width: 300%;
+      }
+    }
+    .fitRadioBlock {
+      padding-top: 180px;
+      .fitRadioText {
+        margin: 0;
+        max-width: 90%;
+        h2 {
+          font-size: 62px;
+          line-height: 90%;
+        }
+        a.button {
+          width: 276px;
+        }
+      }
+      .phone {
+        display: none;
+      }
     }
   }
 }

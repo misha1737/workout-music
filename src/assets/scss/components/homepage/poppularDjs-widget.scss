@@ -184,3 +184,61 @@
     }
   }
 }
+@media (max-width: 1200px) {
+  .poppularDjs {
+    .poppularDjsBlock {
+      padding: 130px 0;
+      position: relative;
+      z-index: 2;
+
+      .djs {
+        display: flex;
+        flex-direction: column;
+        .djContent {
+          margin-top: 0px;
+          &:first-child {
+            margin-top: 0px;
+          }
+        }
+      }
+    }
+    .aboutMusic {
+      margin-left: 0px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .poppularDjs {
+    margin-top: -60px;
+    .poppularDjsBlock {
+      flex-direction: column-reverse;
+      .djs {
+        align-items: center;
+      }
+    }
+    .aboutMusic {
+      h2 {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 62px;
+        line-height: 90%;
+      }
+      p {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      .musicList {
+        li {
+          margin: 0 20px;
+          a {
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+        p {
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+}

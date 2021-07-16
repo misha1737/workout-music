@@ -65,3 +65,19 @@
     text-transform: uppercase;
   }
 }
+@media (max-width: 768px) {
+  .footer {
+    padding: 0;
+    .footerContent {
+      flex-direction: column;
+      padding: 20px;
+      .footerList,
+      .footerSocial {
+        margin-bottom: 20px;
+      }
+    }
+    .copyright {
+      margin: 0;
+    }
+  }
+}

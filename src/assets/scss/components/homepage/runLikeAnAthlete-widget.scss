@@ -59,3 +59,38 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .RunLikeAnAthlete {
+    .RunLikeAnAthleteImage {
+      width: 100%;
+      overflow: hidden;
+      img {
+        width: 200%;
+      }
+      margin-top: calc(-185px - 5vw);
+    }
+
+    .RunLikeAnAthleteContent {
+      max-width: 100%;
+      h2 {
+        font-size: 62px;
+        line-height: 90%;
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .RunLikeAnAthlete {
+    .RunLikeAnAthleteImage {
+      img {
+        width: 300%;
+      }
+      margin-top: calc(-200px - 5vw);
+    }
+    .RunLikeAnAthleteContent {
+      a.button {
+        width: 276px;
+      }
+    }
+  }
+}

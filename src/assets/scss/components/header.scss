@@ -6,7 +6,8 @@
   z-index: 20;
   position: relative;
   @media (max-width: 991px) {
-    padding: 20px 0;
+    margin-bottom: 0px;
+    top: 20px;
   }
   .logo {
     display: flex;
