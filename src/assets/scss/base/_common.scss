@@ -175,10 +175,6 @@ ul {
 .dark-bg {
   background-color: #0e0f12;
 }
-.content {
-  width: 1110px;
-  margin: auto;
-}
 .orange {
   color: $orange;
 }
@@ -188,5 +184,21 @@ ul {
   z-index: 2;
   @media (min-width: 1200px) {
     max-width: 1190px;
+  }
+}
+
+.content {
+  width: 1110px;
+  margin: auto;
+}
+@media (max-width: 1200px) {
+  .content {
+    width: 768px;
+    margin: auto;
+  }
+}
+@media (max-width: 768px) {
+  .content {
+    width: 100%;
   }
 }

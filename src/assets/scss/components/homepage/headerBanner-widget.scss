@@ -57,3 +57,19 @@
     }
   }
 }
+@media (max-width: 1200px) {
+  .headerBanner {
+    .headerBannerImages {
+      .imageHeader.forPersonalUse {
+        margin-right: -230px;
+        width: 600px;
+      }
+      .imageHeader {
+        width: 462px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

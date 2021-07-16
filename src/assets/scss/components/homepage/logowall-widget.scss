@@ -28,3 +28,14 @@
     }
   }
 }
+@media (max-width: 1200px) {
+  .logowall {
+    .logos {
+      max-width: 760px;
+      img {
+        margin: 0 30px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
