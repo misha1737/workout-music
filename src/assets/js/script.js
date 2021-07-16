@@ -52,9 +52,9 @@ $(document).ready(function () {
   });
 
   // tooltip
-  // $(function () {
-  //   $('[data-toggle="tooltip"]').tooltip();
-  // });
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
 
   // progress section
   let position = $('.progress-text-widget').offset().top - 200,
@@ -62,34 +62,28 @@ $(document).ready(function () {
 
   $(document).on('scroll', function (){
     let scroll = $(document).scrollTop();
-    // if(scroll  > position && scroll < (position + height) ) {
+    
     if(scroll > position ) {
-      // console.log(position)
       $('.list-wrap li:nth-child(1)').addClass('active');
     } else {
-      $('.list-wrap li').removeClass('active');
+      $('.list-wrap li:nth-child(1)').removeClass('active');
     }
-
-    if(scroll  > (position + (height/10)) ) {
-      // console.log(position + (height/10))
+    if(scroll  > (position + ((height/2)/4)) ) {
       $('.list-wrap li:nth-child(2)').addClass('active');
+    } else {
+      $('.list-wrap li:nth-child(2)').removeClass('active');
     }
-    if(scroll  > (position + (height/5)) ) {
-      // console.log('333')
+    if(scroll  > (position + ((height/2)/2)) ) {
       $('.list-wrap li:nth-child(3)').addClass('active');
+    } else {
+      $('.list-wrap li:nth-child(3)').removeClass('active');
     }
     if(scroll  > (position + (height/2)) ) {
-      // console.log('333')
       $('.list-wrap li:nth-child(4)').addClass('active');
+    } else {
+      $('.list-wrap li:nth-child(4)').removeClass('active');
     }
 
-
   })
-
-
-
-
-
-
 
 });
