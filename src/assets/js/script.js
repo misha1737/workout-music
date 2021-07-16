@@ -51,11 +51,6 @@ $(document).ready(function () {
     ],
   });
 
-  // tooltip
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip();
-  });
-
   // progress section
   let position = $('.progress-text-widget').offset().top - 200,
       height = $('.progress-text-widget').height();
