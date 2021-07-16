@@ -1,7 +1,6 @@
 .downloadApp {
   background: #0e0f12;
   position: relative;
-
   &::before {
     content: "";
     background: url(../images/top-download-img.svg) no-repeat;
@@ -80,6 +79,56 @@
           svg {
             margin-right: 14px;
           }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .downloadApp {
+    &::before {
+      background-size: 90%;
+    }
+    .downloadAppBlock {
+      .phones {
+        img {
+          max-width: 420px;
+          margin-right: 40px;
+        }
+      }
+      .downloadContent {
+        h2 {
+          font-size: 62px;
+          line-height: 90%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .downloadApp {
+    display: flex;
+    flex-direction: column;
+
+    &::before {
+      background-size: 100%;
+    }
+    .downloadAppBlock {
+      display: flex;
+      flex-direction: column-reverse;
+      .phones {
+        margin: 0 10px;
+        margin-bottom: 40px;
+        img {
+          max-width: 100%;
+          margin-right: 0px;
+        }
+      }
+      .downloadContent {
+        margin: 0 10px;
+        h2 {
+          font-size: 62px;
+          line-height: 90%;
         }
       }
     }
