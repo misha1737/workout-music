@@ -58,27 +58,27 @@ $(document).ready(function () {
 
   // progress section
   let position = $('.progress-text-widget').offset().top - 200,
-      height = $('.progress-text-widget').height();
+    height = $('.progress-text-widget').height();
 
-  $(document).on('scroll', function (){
+  $(document).on('scroll', function () {
     let scroll = $(document).scrollTop();
-    
-    if(scroll > position ) {
+
+    if (scroll > position) {
       $('.list-wrap li:nth-child(1)').addClass('active');
     } else {
       $('.list-wrap li:nth-child(1)').removeClass('active');
     }
-    if(scroll  > (position + ((height/2)/4)) ) {
+    if (scroll > (position + ((height / 2) / 4))) {
       $('.list-wrap li:nth-child(2)').addClass('active');
     } else {
       $('.list-wrap li:nth-child(2)').removeClass('active');
     }
-    if(scroll  > (position + ((height/2)/2)) ) {
+    if (scroll > (position + ((height / 2) / 2))) {
       $('.list-wrap li:nth-child(3)').addClass('active');
     } else {
       $('.list-wrap li:nth-child(3)').removeClass('active');
     }
-    if(scroll  > (position + (height/2)) ) {
+    if (scroll > (position + (height / 2))) {
       $('.list-wrap li:nth-child(4)').addClass('active');
     } else {
       $('.list-wrap li:nth-child(4)').removeClass('active');
