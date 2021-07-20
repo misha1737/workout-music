@@ -55,58 +55,41 @@ $(document).ready(function () {
   });
 
   // progress section
-  let position = $('.progress-text-widget').offset().top - 200,
-    height = $('.progress-text-widget').height();
-
-  let line = '';
-
-  function progress(){
-    if (window.matchMedia('(max-width: 991px)').matches) {
-      line = 'height';
-    }else{
-      line = 'width';
+  let timer=0;
+  function timerRun(){
+    $('.progress-wrap .progress-line').css("width", timer + "%").attr("aria-valuenow", timer);
+   
+    if(timer >= 25){
+      $('.list li:nth-child(1)').addClass('active');
     }
+    if(timer >= 50){
+      $('.list li:nth-child(2)').addClass('active');
+    }
+    if(timer >= 75){
+      $('.list li:nth-child(3)').addClass('active');
+    }
+    if(timer >= 100){
+      $('.list li:nth-child(4)').addClass('active'); 
+      return;
+    }
+    timer++;
+    setTimeout(function(){
+      timerRun();
+    },100);
   }
-  progress();
-  $(window).resize(function() {
-    progress();
-  })
+  
+  let position = $('.progress-text-widget').offset().top-50,
+      height = $('.progress-text-widget').height(),
+      fired = 0;
 
   $(document).on('scroll', function () {
     let scroll = $(document).scrollTop();
 
-    if (scroll > position) {
-      $('.list li:nth-child(1)').addClass('active');
-      $('.progress-line').css(line, '25%');
-    } else {
-      $('.list li:nth-child(1)').removeClass('active');
-      $('.progress-line').css(line, '0');
+    if (scroll > position && fired == 0) {
+      timerRun();
+      fired = 1;
     }
-    if (scroll > (position + ((height / 2) / 4))) {
-      $('.list li:nth-child(2)').addClass('active');
-      $('.progress-line').css(line, '50%');
-    } else {
-      $('.list li:nth-child(2)').removeClass('active');
-    }
-    if (scroll > (position + ((height / 2) / 4) * 2)) {
-      $('.list li:nth-child(3)').addClass('active');
-      $('.progress-line').css(line, '75%');
-    } else {
-      $('.list li:nth-child(3)').removeClass('active');
-    }
-    if (scroll > (position + ((height / 2) / 4) * 3)) {
-      $('.list li:nth-child(4)').addClass('active');
-      $('.progress-line').css(line, '100%');
-    } else {
-      $('.list li:nth-child(4)').removeClass('active');
-    }
-
   })
-
-
-
-
-
 });
 setInterval(() => {
   $('.mobile .imageHeader:nth-child(1)').toggleClass('active');
