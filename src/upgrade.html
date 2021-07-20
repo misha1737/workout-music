@@ -320,15 +320,19 @@
             </div>
             <div class="col-md-4">
               <div class="img-wrap text-center">
-                <picture>
+                <picture class="img-responsive">
                   <source
-                    srcset="assets/images/webp/phone.webp"
-                    type="image/webp"
+                    srcset="
+                      ./assets/images/phone.png,
+                      ./assets/images/2x/phone.png 2x
+                    "
+                    class="img-responsive"
+                    type="image/png"
                   />
                   <img
-                    src="assets/images/phone.png"
-                    alt="phone"
                     class="img-responsive"
+                    src="./assets/images/phone.png"
+                    alt=""
                   />
                 </picture>
               </div>
@@ -382,11 +386,15 @@
                   <li>
                     <picture>
                       <source
-                        srcset="assets/images/webp/tc.webp"
-                        type="image/webp"
+                        srcset="
+                          ./assets/images/tc.png,
+                          ./assets/images/2x/tc.png 2x
+                        "
+                        type="image/png"
+                        class="img-responsive"
                       />
                       <img
-                        src="assets/images/tc.png"
+                        src="./assets/images/tc.png"
                         alt="tc"
                         class="img-responsive"
                       />
@@ -395,11 +403,15 @@
                   <li>
                     <picture>
                       <source
-                        srcset="assets/images/webp/mashable.webp"
-                        type="image/webp"
+                        srcset="
+                          ./assets/images/mashable.png,
+                          ./assets/images/2x/mashable.png 2x
+                        "
+                        type="image/png"
+                        class="img-responsive"
                       />
                       <img
-                        src="assets/images/mashable.png"
+                        src="./assets/images/mashable.png"
                         alt="mashable"
                         class="img-responsive"
                       />
@@ -408,11 +420,15 @@
                   <li>
                     <picture>
                       <source
-                        srcset="assets/images/webp/forbes.webp"
-                        type="image/webp"
+                        srcset="
+                          ./assets/images/forbes.png,
+                          ./assets/images/2x/forbes.png 2x
+                        "
+                        type="image/png"
+                        class="img-responsive"
                       />
                       <img
-                        src="assets/images/forbes.png"
+                        src="./assets/images/forbes.png"
                         alt="forbes"
                         class="img-responsive"
                       />
@@ -421,11 +437,15 @@
                   <li>
                     <picture>
                       <source
-                        srcset="assets/images/webp/self.webp"
-                        type="image/webp"
+                        srcset="
+                          ./assets/images/self.png,
+                          ./assets/images/2x/self.png 2x
+                        "
+                        type="image/png"
+                        class="img-responsive"
                       />
                       <img
-                        src="assets/images/self.png"
+                        src="./assets/images/self.png"
                         alt="self"
                         class="img-responsive"
                       />
@@ -434,11 +454,15 @@
                   <li>
                     <picture>
                       <source
-                        srcset="assets/images/webp/cosmo.webp"
-                        type="image/webp"
+                        srcset="
+                          ./assets/images/cosmo.png,
+                          ./assets/images/2x/cosmo.png 2x
+                        "
+                        type="image/png"
+                        class="img-responsive"
                       />
                       <img
-                        src="assets/images/cosmo.png"
+                        src="./assets/images/cosmo.png"
                         alt="cosmo"
                         class="img-responsive"
                       />
@@ -447,11 +471,15 @@
                   <li>
                     <picture>
                       <source
-                        srcset="assets/images/webp/instyle.webp"
-                        type="image/webp"
+                        srcset="
+                          ./assets/images/instyle.png,
+                          ./assets/images/2x/instyle.png 2x
+                        "
+                        type="image/png"
+                        class="img-responsive"
                       />
                       <img
-                        src="assets/images/instyle.png"
+                        src="./assets/images/instyle.png"
                         alt="instyle"
                         class="img-responsive"
                       />
@@ -464,53 +492,64 @@
         </div>
       </div>
     </section>
-
     <section class="waiting-wrap">
       <div class="container">
-        <div class="waiting-container">
-          <div class="content-wrap">
-            <h2 class="title">
-              What are you <span class="supporting-bold">waiting for?</span>
-            </h2>
-            <p class="txt">
-              Get started today and see why millions of users are raving about
-              FITRADIO
-            </p>
-            <a href="#" class="btn btn-black">Start Your Free Trial</a>
-          </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="waiting-container">
+              <div>
+                <h2 class="title">
+                  What are you <span class="supporting-bold">waiting for?</span>
+                </h2>
+                <p class="txt">
+                  Get started today and see why millions of users are raving
+                  about FITRADIO
+                </p>
+                <a href="upgrade.html" class="btn btn-black"
+                  >Start Your Free Trial</a
+                >
+              </div>
 
-          <div class="download-wrap">
-            <p class="download-title">download the app today!</p>
-            <a
-              href="https://apps.apple.com/us/app/fit-radio-train-inspired/id440844625"
-            >
-              <picture>
-                <source
-                  srcset="assets/images/webp/app-store.webp"
-                  type="image/webp"
-                />
-                <img
-                  src="assets/images/app-store.png"
-                  alt="app-store"
-                  class="img-responsive"
-                />
-              </picture>
-            </a>
-            <a
-              href="https://play.google.com/store/apps/details?id=com.fitradio"
-            >
-              <picture>
-                <source
-                  srcset="assets/images/webp/google-play.webp"
-                  type="image/webp"
-                />
-                <img
-                  src="assets/images/google-play.png"
-                  alt="google-play"
-                  class="img-responsive"
-                />
-              </picture>
-            </a>
+              <div class="download-wrap">
+                <p class="download-title">download the app today!</p>
+                <a
+                  target="_blank"
+                  href="https://apps.apple.com/us/app/fit-radio-train-inspired/id440844625"
+                >
+                  <picture>
+                    <source
+                      srcset="
+                        ./assets/images/app-store.png,
+                        ./assets/images/2x/app-store.png 2x
+                      "
+                      type="image/png"
+                    />
+                    <img
+                      src="./assets/assets/images/app-store.png"
+                      alt="app-store"
+                    />
+                  </picture>
+                </a>
+                <a
+                  target="_blank"
+                  href="https://play.google.com/store/apps/details?id=com.fitradio"
+                >
+                  <picture>
+                    <source
+                      srcset="
+                        ./assets/images/google-play.png,
+                        ./assets/images/2x/google-play.png 2x
+                      "
+                      type="image/png"
+                    />
+                    <img
+                      src="./assets/images/google-play.png"
+                      alt="google-play"
+                    />
+                  </picture>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -524,6 +563,7 @@
               src="assets/images/footer/white-logo.svg"
               alt="fit radio logo"
             />
+
             <div class="socialLinks">
               <a target="_blank" href="https://www.facebook.com/FITRADIO/"
                 ><img src="assets/images/footer/facebook.svg" alt="facebook"
@@ -565,11 +605,15 @@
             >
               <picture>
                 <source
-                  srcset="assets/images/webp/app-store.webp"
-                  type="image/webp"
+                  srcset="
+                    ./assets/images/app-store.png,
+                    ./assets/images/2x/app-store.png 2x
+                  "
+                  type="image/png"
+                  class="img-responsive"
                 />
                 <img
-                  src="assets/images/footer/app-store.png"
+                  src="./assets/images/app-store.png"
                   alt="app-store"
                   class="img-responsive"
                 />
@@ -580,11 +624,15 @@
             >
               <picture>
                 <source
-                  srcset="assets/images/webp/google-play.webp"
-                  type="image/webp"
+                  srcset="
+                    ./assets/images/google-play.png,
+                    ./assets/images/2x/google-play.png 2x
+                  "
+                  type="image/png"
+                  class="img-responsive"
                 />
                 <img
-                  src="assets/images/google-play.png"
+                  src="./assets/images/google-play.png"
                   alt="google-play"
                   class="img-responsive"
                 />
