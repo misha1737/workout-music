@@ -1,5 +1,7 @@
 $triangle_top_height: 188px;
+$triangle_top_height_mobile: 100px;
 $triangle_bottom_height: 160px;
+$triangle_bottom_height_mobile: 90px;
 
 .progress-text-widget {
   background-color: #111011;
@@ -23,12 +25,20 @@ $triangle_bottom_height: 160px;
     bottom: auto;
     border-width: $triangle_top_height 0 0 calc(100vw - 17px);
     border-color: transparent transparent transparent #111011;
+    @media (max-width: 991px) {
+      top: -$triangle_top_height_mobile;
+      border-width: $triangle_top_height_mobile 0 0 calc(100vw - 17px);
+    }
   }
   &:after {
     top: auto;
     bottom: -$triangle_bottom_height;
-    border-width: 0 calc(100vw - 17px) $triangle_bottom_height 0 ;
+    border-width: 0 calc(100vw - 17px) $triangle_bottom_height 0;
     border-color: transparent #111011 transparent transparent;
+    @media (max-width: 991px) {
+      bottom: -$triangle_bottom_height_mobile;
+      border-width: 0 calc(100vw - 17px) $triangle_bottom_height_mobile 0;
+    }
   }
   .bg-wrap {
     position: absolute;
@@ -46,13 +56,22 @@ $triangle_bottom_height: 160px;
     letter-spacing: 1px;
   }
   .list-wrap {
+    position: relative;
+  }
+  .list {
     display: flex;
     padding: 0 10px;
+    @media (max-width: 991px) {
+      flex-wrap: wrap;
+    }
     .item {
       width: 25%;
       padding: 0 15px;
       opacity: 0.5;
       transition: all 0.3s;
+      @media (max-width: 991px) {
+        width: 100%;
+      }
       &.active {
         color: $white;
         opacity: 1;
@@ -84,6 +103,14 @@ $triangle_bottom_height: 160px;
     width: calc(100% - 50px);
     margin: 10px auto;
     position: relative;
+    @media (max-width: 991px) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 1px;
+      margin: 0;
+    }
   }
   .progress-line {
     position: absolute;
@@ -92,5 +119,9 @@ $triangle_bottom_height: 160px;
     background-color: $orange;
     height: 1px;
     transition: all 0.3s;
+    @media (max-width: 991px) {
+      width: 1px;
+      height: 0;
+    }
   }
 }

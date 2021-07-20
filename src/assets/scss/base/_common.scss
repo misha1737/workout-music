@@ -97,23 +97,15 @@ ul {
     font-size: 30px;
   }
 }
-
-// .section-title {
-//   font-size: 30px;
-//   line-height: 1;
-//   margin-bottom: 50px;
-//   @media (min-width: 1024px) {
-//     font-size: 38px;
-//     line-height: 1.5;
-//   }
-// }
-
 .section-title {
   color: $black;
   font-size: 80px;
   font-family: $supporting_font_bold;
   letter-spacing: 1px;
   line-height: 1;
+  @media (max-width: 768px){
+    font-size: 62px;
+  }
 }
 
 .btn {

@@ -1,12 +1,24 @@
 .milestone-widget {
   background-image: url('../images/milestone.png');
   background-repeat: no-repeat;
-  background-position: 100% 0;
+  background-position: 100% 70px;
   background-size: contain;
   position: relative;
   padding: 310px 0 290px;
+  @media (max-width: 1199px) {
+    padding: 250px 0;
+    background-position: 100% 0;
+    background-size: cover;
+  }
+  @media (max-width: 768px) {
+    padding: 200px 0 80px;
+  }
   .text-wrap {
     padding: 0 25px;
+    @media (max-width: 768px) {
+      background-color: #ffffff4d;
+      padding: 20px;
+    }
     .text {
       color: #5E6469;
       letter-spacing: 2px;

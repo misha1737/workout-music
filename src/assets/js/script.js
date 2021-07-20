@@ -58,33 +58,47 @@ $(document).ready(function () {
   let position = $('.progress-text-widget').offset().top - 200,
     height = $('.progress-text-widget').height();
 
+  let line = '';
+
+  function progress(){
+    if (window.matchMedia('(max-width: 991px)').matches) {
+      line = 'height';
+    }else{
+      line = 'width';
+    }
+  }
+  progress();
+  $(window).resize(function() {
+    progress();
+  })
+
   $(document).on('scroll', function () {
     let scroll = $(document).scrollTop();
 
     if (scroll > position) {
-      $('.list-wrap li:nth-child(1)').addClass('active');
-      $('.progress-line').css('width', '25%');
+      $('.list li:nth-child(1)').addClass('active');
+      $('.progress-line').css(line, '25%');
     } else {
-      $('.list-wrap li:nth-child(1)').removeClass('active');
-      $('.progress-line').css('width', '0');
+      $('.list li:nth-child(1)').removeClass('active');
+      $('.progress-line').css(line, '0');
     }
     if (scroll > (position + ((height / 2) / 4))) {
-      $('.list-wrap li:nth-child(2)').addClass('active');
-      $('.progress-line').css('width', '50%');
+      $('.list li:nth-child(2)').addClass('active');
+      $('.progress-line').css(line, '50%');
     } else {
-      $('.list-wrap li:nth-child(2)').removeClass('active');
+      $('.list li:nth-child(2)').removeClass('active');
     }
     if (scroll > (position + ((height / 2) / 4) * 2)) {
-      $('.list-wrap li:nth-child(3)').addClass('active');
-      $('.progress-line').css('width', '75%');
+      $('.list li:nth-child(3)').addClass('active');
+      $('.progress-line').css(line, '75%');
     } else {
-      $('.list-wrap li:nth-child(3)').removeClass('active');
+      $('.list li:nth-child(3)').removeClass('active');
     }
     if (scroll > (position + ((height / 2) / 4) * 3)) {
-      $('.list-wrap li:nth-child(4)').addClass('active');
-      $('.progress-line').css('width', '100%');
+      $('.list li:nth-child(4)').addClass('active');
+      $('.progress-line').css(line, '100%');
     } else {
-      $('.list-wrap li:nth-child(4)').removeClass('active');
+      $('.list li:nth-child(4)').removeClass('active');
     }
 
   })
