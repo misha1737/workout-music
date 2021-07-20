@@ -54,6 +54,8 @@
     text-align: center;
     border-radius: 100px;
     transition: 0.3s;
+    font-family: $main_font_bold;
+    font-weight: 700;
     &:hover {
       background-color: $black;
     }

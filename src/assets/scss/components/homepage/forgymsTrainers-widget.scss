@@ -106,6 +106,8 @@
         border-radius: 100px;
         margin-top: 20px;
         transition: 0.3s;
+        font-family: $main_font_bold;
+        font-weight: 700;
         &:hover {
           background-color: $black;
         }

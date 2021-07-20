@@ -17,8 +17,11 @@ $(document).ready(function () {
 
   // slick
   $(".slider").slick({
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 750,
     centerMode: true,
-    slidesToShow: 4,
+    slidesToShow: 5,
     infinite: true,
     centerPadding: "60px",
     arrows: true,
@@ -30,13 +33,13 @@ $(document).ready(function () {
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
         },
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
         },
       },
       {
