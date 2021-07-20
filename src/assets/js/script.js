@@ -55,9 +55,13 @@ $(document).ready(function () {
   });
 
   // progress section
-  let timer=0;
+  let timer = 0;
   function timerRun(){
-    $('.progress-wrap .progress-line').css("width", timer + "%").attr("aria-valuenow", timer);
+    if (window.matchMedia('(min-width: 992px)').matches) {
+      $('.progress-wrap .progress-line').css('width', timer + "%").attr("aria-valuenow", timer);
+    } else {
+      $('.progress-wrap .progress-line').css('height', timer + "%").attr("aria-valuenow", timer);
+    }
    
     if(timer >= 25){
       $('.list li:nth-child(1)').addClass('active');
@@ -77,6 +81,10 @@ $(document).ready(function () {
       timerRun();
     },100);
   }
+
+  $(window).resize(function() {
+    timerRun();
+  })
   
   let position = $('.progress-text-widget').offset().top-50,
       height = $('.progress-text-widget').height(),

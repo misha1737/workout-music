@@ -70,6 +70,7 @@ $triangle_bottom_height_mobile: 90px;
       opacity: 0.5;
       transition: all 0.3s;
       @media (max-width: 991px) {
+        margin: 0 0 30px;
         width: 100%;
       }
       &.active {
@@ -107,7 +108,7 @@ $triangle_bottom_height_mobile: 90px;
       position: absolute;
       top: 0;
       left: 0;
-      height: 100%;
+      height: calc(100% - 40px);
       width: 1px;
       margin: 0;
     }
