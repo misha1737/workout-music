@@ -54,41 +54,52 @@ $(document).ready(function () {
     ],
   });
 
+  $(".sliderHeader").slick({
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 750,
+    centerMode: false,
+    slidesToShow: 1,
+    infinite: false,
+    arrows: false,
+    dots: true,
+  });
+
   // progress section
   let timer = 0;
-  function timerRun(){
+  function timerRun() {
     if (window.matchMedia('(min-width: 992px)').matches) {
       $('.progress-wrap .progress-line').css('width', timer + "%").attr("aria-valuenow", timer);
     } else {
       $('.progress-wrap .progress-line').css('height', timer + "%").attr("aria-valuenow", timer);
     }
-   
-    if(timer >= 25){
+
+    if (timer >= 25) {
       $('.list li:nth-child(1)').addClass('active');
     }
-    if(timer >= 50){
+    if (timer >= 50) {
       $('.list li:nth-child(2)').addClass('active');
     }
-    if(timer >= 75){
+    if (timer >= 75) {
       $('.list li:nth-child(3)').addClass('active');
     }
-    if(timer >= 100){
-      $('.list li:nth-child(4)').addClass('active'); 
+    if (timer >= 100) {
+      $('.list li:nth-child(4)').addClass('active');
       return;
     }
     timer++;
-    setTimeout(function(){
+    setTimeout(function () {
       timerRun();
-    },100);
+    }, 100);
   }
 
-  $(window).resize(function() {
+  $(window).resize(function () {
     timerRun();
   })
-  
-  let position = $('.progress-text-widget').offset().top-50,
-      height = $('.progress-text-widget').height(),
-      fired = 0;
+
+  let position = $('.progress-text-widget').offset().top - 50,
+    height = $('.progress-text-widget').height(),
+    fired = 0;
 
   $(document).on('scroll', function () {
     let scroll = $(document).scrollTop();
@@ -99,9 +110,3 @@ $(document).ready(function () {
     }
   })
 });
-setInterval(() => {
-  $('.mobile .imageHeader:nth-child(1)').toggleClass('active');
-  $('.mobile .imageHeader:nth-child(2)').toggleClass('active');
-  $('.mobile .points .point:nth-child(1)').toggleClass('active');
-  $('.mobile .points .point:nth-child(2)').toggleClass('active');
-}, 5000)

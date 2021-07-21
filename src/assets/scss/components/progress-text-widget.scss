@@ -134,6 +134,8 @@ $triangle_bottom_height_mobile: 90px;
   .progress-text-widget .list {
     .item,
     .item.active {
+      opacity: 1;
+      margin: 0 0 10px;
       .item-title {
         font-size: 14px;
         color: white;
