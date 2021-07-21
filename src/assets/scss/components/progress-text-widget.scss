@@ -125,3 +125,36 @@ $triangle_bottom_height_mobile: 90px;
     }
   }
 }
+
+@media (max-width: 768px) {
+  .progress-wrap {
+    display: none;
+  }
+  .progress-text-widget .list {
+    .item,
+    .item.active {
+      .item-title {
+        font-size: 14px;
+        color: white;
+        font-weight: 400;
+        font-family: $main_font;
+        .digit {
+          color: white;
+          font-size: 14px;
+          font-weight: 400;
+        }
+        .orange {
+          color: white;
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+      .item-text {
+        color: white;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+      }
+    }
+  }
+}

@@ -61,15 +61,46 @@
     }
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 460px) {
   .logowall {
     .logos {
-      display: flex;
-      max-width: 270px;
-    }
-    p {
-      margin: 20px;
-      font-size: 20px;
+      // display: flex;
+      width: 100%;
+      picture {
+        width: 50%;
+        text-align: center;
+        img {
+          // width: auto;
+          // max-width: 100%;
+          height: auto;
+          margin: 0 15px;
+          margin-bottom: 40px;
+        }
+        .rangetheory {
+          height: 25px;
+        }
+        .f45 {
+          height: 25px;
+        }
+        .d1 {
+          height: 28px;
+        }
+        .ncfit {
+          height: 22px;
+        }
+        .ufc {
+          height: 20px;
+        }
+        .lifetime {
+          height: 30px;
+        }
+        .xtendbarre {
+          height: 16px;
+        }
+        .goldsgym {
+          height: 30px;
+        }
+      }
     }
   }
 }

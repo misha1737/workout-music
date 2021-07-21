@@ -27,9 +27,21 @@
     }
   }
   .text {
-    color: #EAE9E9;
+    color: #eae9e9;
     font-family: $main_font_light;
     font-size: 16px;
     margin: 8px 0 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-running {
+    max-width: 100%;
+    overflow: hidden;
+    .img-wrap {
+      img {
+        width: 260%;
+      }
+    }
   }
 }

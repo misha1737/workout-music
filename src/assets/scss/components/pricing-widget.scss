@@ -63,6 +63,9 @@
     width: 100%;
     max-width: 274px;
     z-index: 9;
+    .text {
+      display: none;
+    }
     & + .pricing-item {
       &:not(:last-child) {
         margin-right: 10px;
@@ -352,8 +355,11 @@
 }
 @media (max-width: 768px) {
   .pricing-wrap {
+    .pricing-description {
+      display: none;
+    }
     .pricing-item {
-      max-width: 270px;
+      max-width: 300px;
       padding: 44px 24px 29px 24px;
       &__head .item-price .digit {
         font-size: 64px;
@@ -361,11 +367,40 @@
       &__head .item-price {
         font-size: 40px;
       }
+      .img-ico {
+        display: none;
+        &.mob {
+          display: inline-block;
+          vertical-align: top;
+        }
+      }
+      .tooltip-wrapper {
+        position: static;
+        display: inline-block;
+        .tooltip {
+          left: 0;
+        }
+      }
+      li.empty {
+        display: none;
+      }
+      li {
+        justify-content: start;
+      }
+      .text {
+        display: block;
+        color: #ffffff;
+        font-size: 13px;
+        position: relative;
+      }
       &.pricing-description {
         max-width: 270px;
         padding: 25px 0;
         overflow: hidden;
       }
+      // .tooltip-wrapper .tooltip {
+      //   left: 0px;
+      // }
     }
   }
 }
