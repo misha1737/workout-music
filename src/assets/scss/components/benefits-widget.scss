@@ -1,0 +1,32 @@
+.benefits-section {
+  padding: 0 0 139px;
+  .phones-img {
+    display: block;
+    margin-top: -50px;
+    img {
+      max-width: 100%;
+    }
+  }
+  .benefits-item {
+    font-size: 18px;
+    margin: 0 0 54px;
+  }
+  .ico-wrap {
+    margin: 0 0 30px;
+  }
+  .item-title {
+    font-family: $main_font_bold;
+    margin-bottom: 6px;
+    color: $black;
+  }
+  .item-desc {
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+  }
+  .benefits-desc {
+    font-size: 18px;
+    font-family: $main_font_bold;
+    text-align: center;
+    color: $black;
+  }
+}

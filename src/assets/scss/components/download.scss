@@ -40,6 +40,7 @@
           color: linear-gradient(135deg, $orange 50%, #dc603b 100%);
           background: linear-gradient(135deg, $orange 50%, #dc603b 100%);
           color: $orange;
+          background-clip: border-box;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }
@@ -82,6 +83,52 @@
           svg {
             margin-right: 14px;
           }
+        }
+      }
+    }
+  }
+  &.affiliate {
+    background-color: $white;
+    overflow: hidden;
+    &::before {
+      background: url(../images/outline-logo-bg-left.svg) no-repeat;
+      background-position: left 28.5% top 34%;
+      z-index: 1;
+    }
+    &::after {
+      content: "";
+      background-color: #000;
+      position: absolute;
+      top: -21.5%;
+      left: -50%;
+      width: 200%;
+      height: 100%;
+      transform: rotate(-7.6deg);
+    }
+    .downloadAppBlock {
+      padding-top: 140px;
+      .downloadContent {
+        margin: 63px 80px 0 0;
+        max-width: 680px;
+        flex: 1 0 auto;
+        h2 {
+          font-size: 110px;
+          margin-bottom: 0;
+        }
+        p {
+          font-size: 40px;
+          text-transform: uppercase;
+          letter-spacing: 0.02em;
+          font-family: $supporting_font_bold;
+          margin-bottom: 42px;
+        }
+        .buttons {
+          max-width: 388px;
+        }
+      }
+      .phones {
+        img {
+          margin: 0;
         }
       }
     }

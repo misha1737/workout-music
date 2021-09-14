@@ -235,6 +235,13 @@
       background: $black;
     }
   }
+  &.affiliate {
+    padding: 0 0 196px;
+    &::before {
+      top: -120px;
+      background-position: 15% -8%;
+    }
+  }
 }
 
 // tooltip
