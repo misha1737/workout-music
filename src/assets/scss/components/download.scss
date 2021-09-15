@@ -108,12 +108,20 @@
     .downloadAppBlock {
       padding-top: 140px;
       .downloadContent {
-        margin: 63px 80px 0 0;
-        max-width: 680px;
+        margin: 63px 40px 0 0;
+        max-width: 365px;
         flex: 1 0 auto;
+        @media (min-width: 991px) {
+          margin: 63px 80px 0 0;
+        }
+        @media (min-width: 1200px) {
+          max-width: 680px;
+        }
         h2 {
-          font-size: 110px;
           margin-bottom: 0;
+          @media (min-width: 1200px) {
+            font-size: 110px;
+          }
         }
         p {
           font-size: 40px;
@@ -128,12 +136,14 @@
       }
       .phones {
         img {
+          display: block;
           margin: 0;
         }
       }
     }
   }
 }
+
 @media (max-width: 1200px) {
   .downloadApp {
     &::before {
@@ -155,6 +165,19 @@
     }
   }
 }
+// @media (max-width: 991px) {
+//   .downloadApp {
+//     &.affiliate {
+//       .downloadAppBlock {
+//         .phones {
+//           img {
+//             max-width: 420px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 @media (max-width: 768px) {
   .downloadApp {
     display: flex;
@@ -179,6 +202,38 @@
         h2 {
           font-size: 62px;
           line-height: 90%;
+        }
+      }
+    }
+    &.affiliate {
+      .downloadAppBlock {
+        flex-direction: column;
+        .downloadContent {
+          max-width: 100%;
+          margin: 0 auto;
+          padding: 0 10px;
+          text-align: center;
+          .buttons {
+            margin: 0 auto;
+          }
+        }
+        .phones {
+          max-width: 320px;
+          margin-left: calc(50% - 115px);
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 440px) {
+  .downloadApp {
+    &.affiliate {
+      .downloadAppBlock {
+        .phones {
+          margin-left: calc(50% - 100px);
         }
       }
     }
